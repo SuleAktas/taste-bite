@@ -1,0 +1,29 @@
+.rated-recipe {
+  width: 345px;
+  margin: 15px;
+  margin-bottom: 45px;
+}
+.rated-recipe-img img {
+  margin-top: 15px;
+  border-radius: 3%;
+  width: 345px;
+  height: 345px;
+}
+
+.rated-recipe-stars {
+  margin-top: 15px;
+}
+.checked {
+  color: orange;
+}
+.fa-star {
+  font-size: 25px;
+  margin-right: 1%;
+}
+
+.rated-recipe-title {
+  margin-top: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
