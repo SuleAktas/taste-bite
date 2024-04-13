@@ -7,10 +7,22 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .collections {
+    margin-left: 177px;
+  }
+  .collection-boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .title {
   font-weight: 600;
   font-size: 40px;
   margin: 15px;
+}
+.collection-title2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 1%;
 }
