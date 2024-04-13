@@ -1,4 +1,5 @@
 import HandPickedCollections from "../HandPickedCollections/HandPickedCollections";
+import PopularCategories from "../PopularCategories/PopularCategories";
 import RatedRecipe from "../RatedRecipe/RatedRecipe";
 import "./App.css";
 
@@ -71,6 +72,17 @@ function App() {
             title={"Sushi Combos for your Next Party!"}
             link={"44 Recipes"}
           />
+        </div>
+      </div>
+      <div className="popular-categories">
+        <div className="popular-title">Popular Categories</div>
+        <div className="popular-categories-boxes">
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
         </div>
       </div>
     </div>

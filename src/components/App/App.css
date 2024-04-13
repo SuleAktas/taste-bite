@@ -14,6 +14,12 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .popular-categories-boxes {
+    margin-left: 177px;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .title {
@@ -25,4 +31,14 @@
   font-weight: 600;
   font-size: 30px;
   margin: 1%;
+}
+.popular-title {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 1%;
+}
+.popular-categories-boxes {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
 }

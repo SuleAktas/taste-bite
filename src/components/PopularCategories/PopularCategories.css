@@ -1,0 +1,12 @@
+.category {
+  margin: 5px;
+}
+.category-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.category-title {
+  text-align: center;
+  font-size: 25px;
+}
