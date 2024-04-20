@@ -1,11 +1,8 @@
 import HandPickedCollections from "../HandPickedCollections/HandPickedCollections";
 import PopularCategories from "../PopularCategories/PopularCategories";
 import RatedRecipe from "../RatedRecipe/RatedRecipe";
-import { Provider } from "react-redux";
-import { ApiProvider } from "@reduxjs/toolkit/query/react";
 
-import { store } from "../../store";
-import { recipesApi, useGetAllRecipesQuery } from "../../features/apiSlice";
+import { useGetAllRecipesQuery } from "../../features/apiSlice";
 import "./App.css";
 
 function App() {
@@ -15,88 +12,86 @@ function App() {
   const COLLECTION1 = process.env.PUBLIC_URL + "/images/collection1.jpeg";
 
   return (
-    <Provider store={store}>
-      <ApiProvider api={recipesApi}>
-        <div className="App">
-          <div className="super-delicious">
-            <span className="title">Super Delicious</span>
-            <div className="recipe-boxes">
-              <RatedRecipe
-                image={RECIPE}
-                title={"Spinach and Cheese Salad"}
-                rating={3.75}
-              />
-              <RatedRecipe
-                image={RECIPE}
-                title={"Spinach and Cheese Salad"}
-                rating={4.75}
-              />
-              <RatedRecipe
-                image={RECIPE}
-                title={"Spinach and Cheese Salad"}
-                rating={2.75}
-              />
-              <RatedRecipe
-                image={RECIPE}
-                title={"Spinach and Cheese Salad"}
-                rating={1.75}
-              />
-              <RatedRecipe
-                image={RECIPE}
-                title={"Spinach and Cheese Salad"}
-                rating={5.75}
-              />
-            </div>
-          </div>
-          <div className="collections">
-            <span className="collection-title2">Hand-Picked Collections</span>
-            <div className="collection-boxes">
-              <HandPickedCollections
-                image={COLLECTION1}
-                title={"Sushi Combos for your Next Party!"}
-                link={"156 Recipes"}
-              />
-              <HandPickedCollections
-                image={COLLECTION1}
-                title={"Sushi Combos for your Next Party!"}
-                link={"180 Recipes"}
-              />
-              <HandPickedCollections
-                image={COLLECTION1}
-                title={"Sushi Combos for your Next Party!"}
-                link={"157 Recipes"}
-              />
-              <HandPickedCollections
-                image={COLLECTION1}
-                title={"Sushi Combos for your Next Party!"}
-                link={"1 Recipes"}
-              />
-              <HandPickedCollections
-                image={COLLECTION1}
-                title={"Sushi Combos for your Next Party!"}
-                link={"55 Recipes"}
-              />
-              <HandPickedCollections
-                image={COLLECTION1}
-                title={"Sushi Combos for your Next Party!"}
-                link={"44 Recipes"}
-              />
-            </div>
-          </div>
-          <div className="popular-categories">
-            <div className="popular-title">Popular Categories</div>
-            <div className="popular-categories-boxes">
-              <PopularCategories />
-              <PopularCategories />
-              <PopularCategories />
-              <PopularCategories />
-              <PopularCategories />
-              <PopularCategories />
-            </div>
-          </div>
+    // <ApiProvider api={recipesApi}>
+    <div className="App">
+      <div className="super-delicious">
+        <span className="title">Super Delicious</span>
+        <div className="recipe-boxes">
+          <RatedRecipe
+            image={RECIPE}
+            title={"Spinach and Cheese Salad"}
+            rating={3.75}
+          />
+          <RatedRecipe
+            image={RECIPE}
+            title={"Spinach and Cheese Salad"}
+            rating={4.75}
+          />
+          <RatedRecipe
+            image={RECIPE}
+            title={"Spinach and Cheese Salad"}
+            rating={2.75}
+          />
+          <RatedRecipe
+            image={RECIPE}
+            title={"Spinach and Cheese Salad"}
+            rating={1.75}
+          />
+          <RatedRecipe
+            image={RECIPE}
+            title={"Spinach and Cheese Salad"}
+            rating={5.75}
+          />
         </div>
-      </ApiProvider>
-    </Provider>
+      </div>
+      <div className="collections">
+        <span className="collection-title2">Hand-Picked Collections</span>
+        <div className="collection-boxes">
+          <HandPickedCollections
+            image={COLLECTION1}
+            title={"Sushi Combos for your Next Party!"}
+            link={"156 Recipes"}
+          />
+          <HandPickedCollections
+            image={COLLECTION1}
+            title={"Sushi Combos for your Next Party!"}
+            link={"180 Recipes"}
+          />
+          <HandPickedCollections
+            image={COLLECTION1}
+            title={"Sushi Combos for your Next Party!"}
+            link={"157 Recipes"}
+          />
+          <HandPickedCollections
+            image={COLLECTION1}
+            title={"Sushi Combos for your Next Party!"}
+            link={"1 Recipes"}
+          />
+          <HandPickedCollections
+            image={COLLECTION1}
+            title={"Sushi Combos for your Next Party!"}
+            link={"55 Recipes"}
+          />
+          <HandPickedCollections
+            image={COLLECTION1}
+            title={"Sushi Combos for your Next Party!"}
+            link={"44 Recipes"}
+          />
+        </div>
+      </div>
+      <div className="popular-categories">
+        <div className="popular-title">Popular Categories</div>
+        <div className="popular-categories-boxes">
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
+          <PopularCategories />
+        </div>
+      </div>
+    </div>
+    // </ApiProvider>
   );
 }
 

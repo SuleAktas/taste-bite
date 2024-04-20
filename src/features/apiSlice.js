@@ -7,7 +7,7 @@ export const recipesApi = createApi({
   }),
   endpoints: (builder) => ({
     getAllRecipes: builder.query({
-      query: () => "search.php?f=a",
+      query: () => "search.php?f=b",
     }),
   }),
 });
