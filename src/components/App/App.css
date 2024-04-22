@@ -20,6 +20,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .popular-recipe {
+    margin-left: 177px;
+    margin-right: 177px;
+  }
 }
 
 .title {

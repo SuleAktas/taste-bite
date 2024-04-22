@@ -4,6 +4,7 @@ import RatedRecipe from "../RatedRecipe/RatedRecipe";
 
 import { useGetAllRecipesQuery } from "../../features/apiSlice";
 import "./App.css";
+import PopularRecipe from "../PopularRecipe/PopularRecipe";
 
 function App() {
   const { data } = useGetAllRecipesQuery();
@@ -14,6 +15,9 @@ function App() {
   return (
     // <ApiProvider api={recipesApi}>
     <div className="App">
+      <div className="popular-recipe">
+        <PopularRecipe />
+      </div>
       <div className="super-delicious">
         <span className="title">Super Delicious</span>
         <div className="recipe-boxes">
