@@ -24,6 +24,12 @@
     margin-left: 177px;
     margin-right: 177px;
   }
+  .inbox {
+    width: 100% !important;
+    min-width: 650px !important;
+    border-radius: 0px !important;
+    margin-left: 0px !important;
+  }
 }
 
 .title {
@@ -45,4 +51,11 @@
   width: 350px;
   display: flex;
   flex-wrap: wrap;
+}
+.inbox {
+  width: 345px;
+  height: 436px;
+  background-color: #ffd5c0;
+  border-radius: 2%;
+  margin: 2%;
 }

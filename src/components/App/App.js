@@ -5,6 +5,7 @@ import RatedRecipe from "../RatedRecipe/RatedRecipe";
 import { useGetAllRecipesQuery } from "../../features/apiSlice";
 import "./App.css";
 import PopularRecipe from "../PopularRecipe/PopularRecipe";
+import Inbox from "../Inbox/Inbox";
 
 function App() {
   const { data } = useGetAllRecipesQuery();
@@ -13,7 +14,6 @@ function App() {
   const COLLECTION1 = process.env.PUBLIC_URL + "/images/collection1.jpeg";
 
   return (
-    // <ApiProvider api={recipesApi}>
     <div className="App">
       <div className="popular-recipe">
         <PopularRecipe />
@@ -94,8 +94,10 @@ function App() {
           <PopularCategories />
         </div>
       </div>
+      <div className="inbox">
+        <Inbox />
+      </div>
     </div>
-    // </ApiProvider>
   );
 }
 
