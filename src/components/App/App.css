@@ -16,10 +16,13 @@
   }
   .popular-categories-boxes {
     margin-left: 177px;
+    margin-right: 177px;
     width: 100% !important;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around !important;
+    gap: 20px;
   }
+
   .popular-recipe {
     margin-left: 177px;
     margin-right: 177px;
@@ -29,6 +32,9 @@
     min-width: 650px !important;
     border-radius: 0px !important;
     margin-left: 0px !important;
+  }
+  .popular-title {
+    margin-left: 177px;
   }
 }
 
