@@ -1,7 +1,25 @@
 @media screen and (min-width: 650px) {
   .popular-recipe-box {
-    width: 100% !important;
+    width: 1100px !important;
     display: flex;
+    border-radius: 0px !important;
+    min-width: 650px !important;
+  }
+  .popular-recipe-image img {
+    border-radius: 0% !important;
+    width: 700px !important;
+    align-self: left;
+    height: 537px;
+    margin-bottom: 7%;
+  }
+  .popular-recipe-image {
+    margin-right: 10px;
+  }
+  .popular-recipe-text {
+    margin-top: 150px;
+  }
+  .popular-recipe-btn2 {
+    background-color: transparent !important;
   }
 }
 .popular-recipe-box {
