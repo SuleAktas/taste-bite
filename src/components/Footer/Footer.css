@@ -1,0 +1,16 @@
+.footer-box {
+  background-color: #d3d3d3;
+  width: 375px;
+}
+.custom-accordion .accordion-item {
+  background-color: #d3d3d3;
+}
+
+.custom-accordion .accordion-item .accordion-header {
+  background-color: #d3d3d3;
+}
+
+.custom-accordion .accordion-item .accordion-body,
+.custom-accordion .accordion-item .accordion-button {
+  background-color: #d3d3d3;
+}
