@@ -1,0 +1,21 @@
+@media screen and (min-width: 650px) {
+  .latest-recipe-box {
+    width: 250px !important;
+  }
+  .latest-recipe-image img {
+    width: 250px !important;
+  }
+}
+
+.latest-recipe-box {
+  width: 150px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  margin: 15px;
+}
+.latest-recipe-image img {
+  width: 150px;
+  border-radius: 2%;
+}
+.latest-recipe-title {
+}

@@ -6,6 +6,9 @@ import { useGetAllRecipesQuery } from "../../features/apiSlice";
 import "./App.css";
 import PopularRecipe from "../PopularRecipe/PopularRecipe";
 import Inbox from "../Inbox/Inbox";
+import LatestRecipes from "../LatestRecipes/LatestRecipes";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function App() {
   const { data } = useGetAllRecipesQuery();
@@ -15,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <div className="popular-recipe">
         <PopularRecipe />
       </div>
@@ -47,6 +51,38 @@ function App() {
             rating={5.75}
           />
         </div>
+      </div>
+      <div className="popular-categories">
+        <div className="popular-title">Popular Categories</div>
+        <div className="popular-categories-boxes">
+          <PopularCategories
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <PopularCategories
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <PopularCategories
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <PopularCategories
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <PopularCategories
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <PopularCategories
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+        </div>
+      </div>
+      <div className="inbox">
+        <Inbox />
       </div>
       <div className="collections">
         <span className="collection-title2">Hand-Picked Collections</span>
@@ -83,20 +119,45 @@ function App() {
           />
         </div>
       </div>
-      <div className="popular-categories">
-        <div className="popular-title">Popular Categories</div>
-        <div className="popular-categories-boxes">
-          <PopularCategories />
-          <PopularCategories />
-          <PopularCategories />
-          <PopularCategories />
-          <PopularCategories />
-          <PopularCategories />
+
+      <div className="latest-recipes">
+        <div className="latest-recipes-title">Latest Recipes</div>
+        <div className="latest-recipe-boxes">
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
+          <LatestRecipes
+            image={RECIPE}
+            title={"Caramel Strawberry Milkshake"}
+          />
         </div>
       </div>
-      <div className="inbox">
-        <Inbox />
-      </div>
+      <Footer />
     </div>
   );
 }

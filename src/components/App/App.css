@@ -36,6 +36,17 @@
   .popular-title {
     margin-left: 177px;
   }
+  .latest-recipes {
+    width: 100% !important;
+    min-width: 650px !important;
+    margin-left: 177px;
+    margin-right: 177px;
+  }
+  .latest-recipe-boxes {
+    width: 80% !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .title {
@@ -64,4 +75,19 @@
   background-color: #ffd5c0;
   border-radius: 2%;
   margin: 2%;
+}
+
+.latest-recipes {
+  width: 375px;
+}
+.latest-recipes-title {
+  margin-left: 15px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.latest-recipe-boxes {
+  /* max-width: 375px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
