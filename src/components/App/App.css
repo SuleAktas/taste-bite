@@ -17,7 +17,7 @@
   .popular-categories-boxes {
     margin-left: 177px;
     margin-right: 177px;
-    width: 100% !important;
+    width: 80% !important;
     display: flex;
     justify-content: space-around !important;
     gap: 20px;
@@ -34,7 +34,7 @@
     margin-left: 0px !important;
   }
   .popular-title {
-    margin-left: 177px;
+    margin-left: 177px !important;
   }
   .latest-recipes {
     width: 100% !important;
