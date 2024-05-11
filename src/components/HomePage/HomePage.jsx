@@ -1,10 +1,10 @@
 import React from "react";
 import PopularRecipe from "../PopularRecipe/PopularRecipe";
-import Inbox from "../Inbox/Inbox";
-import LatestRecipes from "../LatestRecipes/LatestRecipes";
-import HandPickedCollections from "../HandPickedCollections/HandPickedCollections";
-import PopularCategories from "../PopularCategories/PopularCategories";
-import RatedRecipe from "../RatedRecipe/RatedRecipe";
+import Inbox from "./components/Inbox/Inbox";
+import LatestRecipes from "./components/LatestRecipes/LatestRecipes";
+import HandPickedCollections from "./components/HandPickedCollections/HandPickedCollections";
+import PopularCategories from "./components/PopularCategories/PopularCategories";
+import RatedRecipe from "./components/RatedRecipe//RatedRecipe";
 
 import { useGetAllRecipesQuery } from "../../features/apiSlice";
 import "./HomePage.css";
