@@ -2,13 +2,15 @@ import React from "react";
 import "./Header.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Header() {
   const LOGO = process.env.PUBLIC_URL + "/images/TasteBite.png";
+
   const [isOpen, setIsOpen] = useState(false);
+
   const openNav = () => {
     setIsOpen(true);
   };
@@ -16,14 +18,15 @@ function Header() {
   const closeNav = () => {
     setIsOpen(false);
   };
+
   return (
     <div className="header-box">
       <img src={LOGO}></img>
       <div className="links-wider-page">
-        <a href="#">Homepage</a>
-        <a href="#">Recipes</a>
-        <a href="#">Pages</a>
-        <a href="#">Buy</a>
+        <Link to="/">Home</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/pages">Pages</Link>
+        <Link to="/buy">Buy</Link>
       </div>
       <div className="header-buttons">
         <FontAwesomeIcon icon={faSearch} size="xl" />
@@ -37,10 +40,10 @@ function Header() {
         <a href="#" className="closebtn" onClick={closeNav}>
           &times;
         </a>
-        <a href="#">Homepage</a>
-        <a href="#">Recipe Page</a>
-        <a href="#">Pages</a>
-        <a href="#">Buy</a>
+        <Link to="/">Home</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/pages">Pages</Link>
+        <Link to="/buy">Buy</Link>
       </div>
     </div>
   );
