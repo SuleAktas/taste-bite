@@ -1,5 +1,6 @@
 import React from "react";
 import "./PopularRecipe.css";
+import { Link } from "react-router-dom";
 
 function PopularRecipe() {
   const POPULAR_RECIPE = process.env.PUBLIC_URL + "/images/recipe.jpg";
@@ -19,7 +20,9 @@ function PopularRecipe() {
         </div>
         <div className="popular-recipe-btn">
           <div className="popular-recipe-btn2">
-            <i className="gg-arrow-right"></i>
+            <Link to="/recipe">
+              <i className="gg-arrow-right"></i>
+            </Link>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
 import HomePage from "../HomePage/HomePage";
 import BlogPage from "../BlogPage/BlogPage";
+import RecipePage from "../RecipePage/RecipePage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/recipe" element={<RecipePage />} />
         </Routes>
         <Footer />
       </div>
