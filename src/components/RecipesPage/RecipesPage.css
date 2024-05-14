@@ -1,0 +1,11 @@
+@media screen and (min-width: 550px) {
+  .recipes-box {
+    width: 90% !important;
+    margin: 25px 0px 25px 177px !important;
+  }
+}
+.recipes-box {
+  width: 375px;
+  display: flex;
+  flex-wrap: wrap;
+}
