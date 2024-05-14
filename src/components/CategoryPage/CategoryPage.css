@@ -1,0 +1,23 @@
+@media screen and (min-width: 550px) {
+  .categories-box {
+    width: 80% !important;
+    margin-left: 177px;
+    margin-right: 147px;
+    margin-bottom: 60px;
+  }
+  .categories-title {
+    font-size: 45px !important;
+    margin: 25px 0px 25px 177px !important;
+  }
+}
+.categories-box {
+  width: 375px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.categories-title {
+  margin: 10px 10px 10px 20px;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Playfair Display", serif;
+}

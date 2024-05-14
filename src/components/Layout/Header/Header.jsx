@@ -25,7 +25,7 @@ function Header() {
       <div className="links-wider-page">
         <Link to="/">Home</Link>
         <Link to="/blog">Blog</Link>
-        <Link to="/pages">Pages</Link>
+        <Link to="/categories">Categories</Link>
         <Link to="/buy">Buy</Link>
       </div>
       <div className="header-buttons">
@@ -42,7 +42,7 @@ function Header() {
         </a>
         <Link to="/">Home</Link>
         <Link to="/blog">Blog</Link>
-        <Link to="/pages">Pages</Link>
+        <Link to="/categories">Categories</Link>
         <Link to="/buy">Buy</Link>
       </div>
     </div>

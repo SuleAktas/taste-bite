@@ -1,0 +1,26 @@
+@media screen and (min-width: 550px) {
+  .ctg-image img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .category-box {
+    width: 260px !important;
+    height: 260px !important;
+    margin: 15px;
+  }
+}
+.category-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.ctg-image img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.ctg-title {
+  font-size: 20px;
+}
