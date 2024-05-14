@@ -2,13 +2,14 @@ import React, { startTransition } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import "./RatedRecipe.css";
+import { Link } from "react-router-dom";
 
 function RatedRecipe(props) {
-  const [stars, setStars] = useState(0);
+  const [stars, setStars] = useState(5);
 
-  useEffect(() => {
-    setStars(String(props.rating).split(".")[0]);
-  }, []);
+  // useEffect(() => {
+  //   setStars(String(props.rating).split(".")[0]);
+  // }, []);
 
   return (
     <div className="rated-recipe">
@@ -32,7 +33,18 @@ function RatedRecipe(props) {
           className={stars >= 5 ? "fa fa-star checked" : "fa fa-star"}
         ></span>
       </div>
-      <div className="rated-recipe-title">{props.title}</div>
+      <div className="rated-recipe-exp-box">
+        <div className="rated-recipe-title">{props.title}</div>
+        <Link
+          to={{
+            pathname: "/recipe",
+            state: { recipeId: props.id },
+            search: `?id=${props.id}`,
+          }}
+        >
+          <i className="gg-arrow-right"></i>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,15 +1,13 @@
 import React from "react";
 import "./PopularCategories.css";
 
-function PopularCategories() {
-  const CATEGORY = process.env.PUBLIC_URL + "/images/pasta.jpeg";
-
+function PopularCategories(props) {
   return (
     <div className="category">
       <div className="category-image">
-        <img src={CATEGORY}></img>
+        <img src={props.image}></img>
       </div>
-      <div className="category-title">Pasta</div>
+      <div className="category-title">{props.title}</div>
     </div>
   );
 }

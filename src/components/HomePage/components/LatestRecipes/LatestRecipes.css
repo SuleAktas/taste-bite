@@ -20,3 +20,7 @@
 .latest-recipe-title {
   font-weight: 600;
 }
+.link-without-decoration {
+  text-decoration: none;
+  color: inherit;
+}

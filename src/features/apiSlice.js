@@ -9,7 +9,21 @@ export const recipesApi = createApi({
     getAllRecipes: builder.query({
       query: () => "search.php?f=b",
     }),
+    getAllCategories: builder.query({
+      query: () => "categories.php",
+    }),
+    getRandomMeal: builder.query({
+      query: () => "random.php",
+    }),
+    getMealById: builder.query({
+      query: (id) => `lookup.php?i=${id}`,
+    }),
   }),
 });
 
-export const { useGetAllRecipesQuery } = recipesApi;
+export const {
+  useGetAllCategoriesQuery,
+  useGetAllRecipesQuery,
+  useGetRandomMealQuery,
+  useGetMealByIdQuery,
+} = recipesApi;

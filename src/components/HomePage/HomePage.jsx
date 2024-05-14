@@ -6,76 +6,59 @@ import HandPickedCollections from "./components/HandPickedCollections/HandPicked
 import PopularCategories from "./components/PopularCategories/PopularCategories";
 import RatedRecipe from "./components/RatedRecipe/RatedRecipe";
 
-import { useGetAllRecipesQuery } from "../../features/apiSlice";
+import {
+  useGetAllRecipesQuery,
+  useGetAllCategoriesQuery,
+  useGetRandomMealQuery,
+} from "../../features/apiSlice";
 import "./HomePage.css";
 
 function HomePage() {
-  const { data } = useGetAllRecipesQuery();
-  console.log(data);
-  const RECIPE = process.env.PUBLIC_URL + "/images/recipe.jpg";
+  const { data, isLoading: isRecipesLoading } = useGetAllRecipesQuery();
+  const { data: categories, isLoading: isCategoriesLoading } =
+    useGetAllCategoriesQuery();
+  const { data: randomMeal, isLoading: isRandomMealLoading } =
+    useGetRandomMealQuery();
+
   const COLLECTION1 = process.env.PUBLIC_URL + "/images/collection1.jpeg";
+  if (isRecipesLoading || isCategoriesLoading || isRandomMealLoading) {
+    return <div>Loading...</div>;
+  }
+  console.log(data);
+  console.log("kategoriler", categories.categories);
+  console.log("random yemek", randomMeal);
   return (
     <div className="home-page">
       <div className="popular-recipe">
-        <PopularRecipe />
+        <PopularRecipe
+          title={randomMeal.meals[0].strMeal}
+          image={randomMeal.meals[0].strMealThumb}
+          id={randomMeal.meals[0].idMeal}
+        />
       </div>
       <div className="super-delicious">
         <span className="title">Super Delicious</span>
         <div className="recipe-boxes">
-          <RatedRecipe
-            image={RECIPE}
-            title={"Spinach and Cheese Salad"}
-            rating={3.75}
-          />
-          <RatedRecipe
-            image={RECIPE}
-            title={"Spinach and Cheese Salad"}
-            rating={4.75}
-          />
-          <RatedRecipe
-            image={RECIPE}
-            title={"Spinach and Cheese Salad"}
-            rating={2.75}
-          />
-          <RatedRecipe
-            image={RECIPE}
-            title={"Spinach and Cheese Salad"}
-            rating={1.75}
-          />
-          <RatedRecipe
-            image={RECIPE}
-            title={"Spinach and Cheese Salad"}
-            rating={5.75}
-          />
+          {data?.meals.slice(0, 9).map((recipe) => (
+            <RatedRecipe
+              key={recipe.idMeal}
+              id={recipe.idMeal}
+              image={recipe.strMealThumb}
+              title={recipe.strMeal}
+            />
+          ))}
         </div>
       </div>
       <div className="popular-categories">
         <div className="popular-title">Popular Categories</div>
         <div className="popular-categories-boxes">
-          <PopularCategories
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <PopularCategories
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <PopularCategories
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <PopularCategories
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <PopularCategories
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <PopularCategories
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
+          {categories?.categories.slice(0, 6).map((category) => (
+            <PopularCategories
+              key={category.id}
+              image={category.strCategoryThumb}
+              title={category.strCategory}
+            />
+          ))}
         </div>
       </div>
       <div className="inbox">
@@ -84,11 +67,6 @@ function HomePage() {
       <div className="collections">
         <span className="collection-title2">Hand-Picked Collections</span>
         <div className="collection-boxes">
-          <HandPickedCollections
-            image={COLLECTION1}
-            title={"Sushi Combos for your Next Party!"}
-            link={"156 Recipes"}
-          />
           <HandPickedCollections
             image={COLLECTION1}
             title={"Sushi Combos for your Next Party!"}
@@ -120,38 +98,13 @@ function HomePage() {
       <div className="latest-recipes">
         <div className="latest-recipes-title">Latest Recipes</div>
         <div className="latest-recipe-boxes">
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
-          <LatestRecipes
-            image={RECIPE}
-            title={"Caramel Strawberry Milkshake"}
-          />
+          {data?.meals.slice(9, 17).map((recipe) => (
+            <LatestRecipes
+              id={recipe.idMeal}
+              image={recipe.strMealThumb}
+              title={recipe.strMeal}
+            />
+          ))}
         </div>
       </div>
     </div>

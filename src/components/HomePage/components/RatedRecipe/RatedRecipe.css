@@ -27,3 +27,8 @@
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
+.rated-recipe-exp-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
