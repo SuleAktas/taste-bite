@@ -11,7 +11,7 @@ import RecipesPage from "../RecipesPage/RecipesPage";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="app">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
