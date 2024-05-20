@@ -1,6 +1,6 @@
 @media screen and (min-width: 650px) {
   .inbox-box {
-    /* width: 30%; */
+    min-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
