@@ -5,11 +5,11 @@ import "./RatedRecipe.css";
 import { Link } from "react-router-dom";
 
 function RatedRecipe(props) {
-  const [stars, setStars] = useState(5);
+  const [stars, setStars] = useState(1);
 
-  // useEffect(() => {
-  //   setStars(String(props.rating).split(".")[0]);
-  // }, []);
+  useEffect(() => {
+    setStars(Math.floor(Math.random() * 5) + 1);
+  }, []);
 
   return (
     <div className="rated-recipe">
