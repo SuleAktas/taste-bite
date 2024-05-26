@@ -2,9 +2,8 @@
 
 @media screen and (min-width: 550px) {
   .blog-page {
-    width: 80% !important;
-    margin-left: 165px !important;
-    margin-right: 165px !important;
+    display: table;
+    margin: auto !important;
   }
   .blog-title {
     font-size: 45px !important;
@@ -29,6 +28,7 @@
   }
   .blog-basics-text {
     width: 45% !important;
+    text-align: justify;
   }
   .blog-basics-img img {
     margin-top: 30px;
@@ -64,6 +64,7 @@
   display: flex;
   margin-bottom: 20px;
   border-bottom: 1px solid #c0c0c0;
+  text-align: justify;
 }
 .blog-exp-author {
   margin-right: 60px;
@@ -90,6 +91,7 @@
   margin-top: 20px;
   line-height: 2;
   word-spacing: 3px;
+  text-align: justify;
 }
 .blog-basics-img img {
   width: 345px;

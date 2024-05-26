@@ -1,7 +1,7 @@
 @media screen and (min-width: 550px) {
   .recipe-page {
-    width: 80% !important;
-    margin: 10px 177px 10px 177px !important;
+    display: table;
+    margin: auto !important;
   }
   .recipe-make-again {
     min-width: 1200px;
@@ -35,6 +35,7 @@
   }
   .instruction-item {
     margin-top: 5px !important;
+    text-align: justify;
   }
 }
 .recipe-page {
