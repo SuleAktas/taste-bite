@@ -47,6 +47,9 @@
     min-width: 1200px;
   }
 }
+.icon-margin {
+  margin-right: 5px;
+}
 .blog-page {
   margin: 20px;
   width: 345px;

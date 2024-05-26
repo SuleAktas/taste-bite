@@ -28,7 +28,11 @@ function BlogPage() {
           <FontAwesomeIcon icon={faCircleUser} size="lg" /> Tricia Albert
         </div>
         <div className="blog-date">
-          <FontAwesomeIcon icon={faCalendar} size="lg" />
+          <FontAwesomeIcon
+            icon={faCalendar}
+            size="lg"
+            className="icon-margin"
+          />
           Yesterday
         </div>
       </div>
