@@ -16,11 +16,13 @@
     flex-wrap: wrap;
     min-width: 1200px;
   }
-  .popular-categories-boxes {
+  .popular-categories {
     min-width: 1200px;
-    margin-left: 177px;
-    margin-right: 177px;
-    width: 80% !important;
+    margin-left: 177px !important;
+    margin-right: 177px !important;
+  }
+  .popular-categories-boxes {
+    width: 95% !important;
     display: flex;
     justify-content: space-around !important;
     gap: 20px;
