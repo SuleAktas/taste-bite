@@ -28,6 +28,7 @@
   .popular-recipe-btn {
     /* margin-top: 110px !important; */
     margin-top: auto !important;
+    margin-right: -38px;
   }
 }
 .popular-recipe-box {
@@ -59,13 +60,15 @@
   font-weight: 600;
   margin-bottom: 2%;
   margin-left: 40px;
+  margin-right: 40px;
 }
 .popular-recipe-exp {
   font-weight: 400;
   font-family: "Inter", sans-serif;
   margin-left: 40px;
   line-height: 30px;
-  margin-right: 3%;
+  margin-right: 10%;
+  text-align: justify;
 }
 .popular-recipe-btn {
   display: flex;
