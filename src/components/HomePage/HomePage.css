@@ -42,16 +42,13 @@
     margin-left: 177px !important;
   }
   .latest-recipes {
-    width: 100% !important;
+    width: 60% !important;
     min-width: 650px !important;
-    margin-left: 177px;
-    margin-right: 177px;
+    margin-left: 177px !important;
   }
   .latest-recipe-boxes {
-    width: 80% !important;
+    width: 70% !important;
     min-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
   }
   .inbox {
     min-width: 1200px !important;
@@ -95,8 +92,6 @@
   font-weight: 600;
 }
 .latest-recipe-boxes {
-  /* max-width: 375px; */
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
