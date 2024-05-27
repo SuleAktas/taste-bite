@@ -21,6 +21,10 @@ function HomePage() {
     useGetRandomMealQuery();
 
   const COLLECTION1 = process.env.PUBLIC_URL + "/images/collection1.jpeg";
+  const COLLECTION2 = process.env.PUBLIC_URL + "/images/COLLECTION2.jpeg";
+  const COLLECTION3 = process.env.PUBLIC_URL + "/images/COLLECTION3.jpeg";
+  const COLLECTION4 = process.env.PUBLIC_URL + "/images/COLLECTION4.jpeg";
+  const COLLECTION5 = process.env.PUBLIC_URL + "/images/COLLECTION5.webp";
   if (isRecipesLoading || isCategoriesLoading || isRandomMealLoading) {
     return <div>Loading...</div>;
   }
@@ -73,23 +77,23 @@ function HomePage() {
             link={"180 Recipes"}
           />
           <HandPickedCollections
-            image={COLLECTION1}
-            title={"Sushi Combos for your Next Party!"}
+            image={COLLECTION2}
+            title={"Mouthwatering Vegan Recipes!"}
             link={"157 Recipes"}
           />
           <HandPickedCollections
-            image={COLLECTION1}
-            title={"Sushi Combos for your Next Party!"}
+            image={COLLECTION3}
+            title={"Best Vegetarian Dinner Recipes"}
             link={"1 Recipes"}
           />
           <HandPickedCollections
-            image={COLLECTION1}
-            title={"Sushi Combos for your Next Party!"}
+            image={COLLECTION4}
+            title={"Best Salmon Recipes!"}
             link={"55 Recipes"}
           />
           <HandPickedCollections
-            image={COLLECTION1}
-            title={"Sushi Combos for your Next Party!"}
+            image={COLLECTION5}
+            title={"Wholesome Lentil Recipes!"}
             link={"44 Recipes"}
           />
         </div>
