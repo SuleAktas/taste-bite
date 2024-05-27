@@ -1,7 +1,4 @@
 @media screen and (min-width: 550px) {
-  .header-box {
-    /* width: 40% !important; */
-  }
   .links-wider-page {
     display: flex !important;
   }
@@ -13,10 +10,12 @@
   }
   .header-box {
     margin-bottom: 50px !important;
+    margin-left: 60px !important;
   }
   .header-box img {
+    transform: scale(2, 2) !important;
     margin-left: 177px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .wider-page-icons {
     margin-top: 30px;
@@ -61,8 +60,7 @@
   justify-content: space-between;
 }
 .header-box img {
-  height: 50px;
-  width: 120px;
+  transform: scale(1, 1);
 }
 .header-buttons {
   padding: 10px;

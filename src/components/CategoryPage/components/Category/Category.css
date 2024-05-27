@@ -1,7 +1,6 @@
 @media screen and (min-width: 550px) {
   .ctg-image img {
-    width: 250px !important;
-    height: 250px !important;
+    transform: scale(0.75, 0.75) !important;
   }
   .category-box {
     width: 260px !important;
@@ -18,8 +17,7 @@
 }
 .ctg-image img {
   border-radius: 50%;
-  width: 130px;
-  height: 130px;
+  transform: scale(0.75, 0.75) !important;
 }
 .ctg-title {
   font-size: 20px;
