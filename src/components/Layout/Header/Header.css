@@ -1,4 +1,7 @@
 @media screen and (min-width: 550px) {
+  .header-box {
+    /* width: 40% !important; */
+  }
   .links-wider-page {
     display: flex !important;
   }
@@ -13,9 +16,20 @@
   }
   .header-box img {
     margin-left: 177px;
+    margin-top: 15px;
+  }
+  .wider-page-icons {
+    margin-top: 30px;
+    display: flex !important;
+    padding-left: 20px;
+  }
+  .wider-page-icons * {
+    margin-left: 30px;
   }
 }
-
+.wider-page-icons {
+  display: none;
+}
 .links-wider-page {
   display: none;
   width: fit-content;
@@ -25,7 +39,7 @@
   justify-content: center;
 }
 .links-wider-page a {
-  margin-right: 35px;
+  margin-right: 90px;
   color: #000000;
   text-decoration: none;
   font-size: 18px;
@@ -38,7 +52,6 @@
 .links-wider-page {
   display: none;
   margin-left: 300px;
-  /* color: #00856f; */
 }
 .header-box {
   margin: 12px;

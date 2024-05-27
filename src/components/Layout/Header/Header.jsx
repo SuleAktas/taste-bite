@@ -3,6 +3,8 @@ import "./Header.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
+
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -27,6 +29,10 @@ function Header() {
         <Link to="/blog">Blog</Link>
         <Link to="/categories">Categories</Link>
         <Link to="/buy">Buy</Link>
+      </div>
+      <div className="wider-page-icons">
+        <FontAwesomeIcon icon={faSearch} size="xl" />
+        <FontAwesomeIcon icon={faCircleUser} size="xl" />
       </div>
       <div className="header-buttons">
         <FontAwesomeIcon icon={faSearch} size="xl" />
