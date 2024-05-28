@@ -1,0 +1,30 @@
+@media screen and (min-width: 550px) {
+  .search-item .item-image img {
+    height: 60px !important;
+    width: 60px !important;
+  }
+}
+.search-item {
+  padding: 10px;
+  height: 80px;
+  border-bottom: 1px solid #c0c0c0;
+  display: flex;
+  align-items: center;
+}
+.custom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-item .item-image img {
+  height: 60px;
+  width: 60px !important;
+}
+.item-txt {
+  margin-left: 10px;
+}
+.item-title {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}

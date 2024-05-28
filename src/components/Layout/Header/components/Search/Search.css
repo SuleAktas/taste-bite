@@ -1,0 +1,8 @@
+.search-input {
+  display: flex;
+  align-items: center;
+}
+.search-output {
+  height: 400px;
+  overflow: scroll;
+}

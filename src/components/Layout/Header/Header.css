@@ -10,9 +10,8 @@
   }
   .header-box {
     margin-bottom: 50px !important;
-    margin-left: 60px !important;
   }
-  .header-box img {
+  .header-logo {
     transform: scale(2, 2) !important;
     margin-left: 177px;
     margin-top: 20px;
@@ -25,6 +24,20 @@
   .wider-page-icons * {
     margin-left: 30px;
   }
+  .search-overlay {
+    width: 80% !important;
+    height: 500px;
+    margin-left: 125px !important;
+  }
+}
+.search-overlay {
+  position: absolute;
+  display: table;
+  margin: auto;
+  width: 375px;
+  height: 375px;
+  background-color: #f5f5f5;
+  z-index: 999;
 }
 .wider-page-icons {
   display: none;
@@ -59,7 +72,7 @@
   display: flex;
   justify-content: space-between;
 }
-.header-box img {
+.header-logo {
   transform: scale(1, 1);
 }
 .header-buttons {
