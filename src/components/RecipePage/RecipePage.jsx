@@ -7,6 +7,8 @@ import YouTube from "react-youtube";
 import Checkbox from "@mui/material/Checkbox";
 import { useLocation } from "react-router-dom";
 import { useGetMealByIdQuery } from "../../features/apiSlice";
+import { useState } from "react";
+import { orange } from "@mui/material/colors";
 
 function RecipePage() {
   const opts = {
@@ -16,6 +18,13 @@ function RecipePage() {
     playerVars: {
       autoplay: 0,
     },
+  };
+
+  const [checkedItems, setCheckedItems] = useState({});
+
+  const handleCheckboxChange = (event, index) => {
+    const { checked } = event.target;
+    setCheckedItems({ ...checkedItems, [index]: checked });
   };
 
   const location = useLocation();
@@ -41,6 +50,7 @@ function RecipePage() {
       }
     }
   }
+
   return (
     <div className="recipe-page">
       <div className="recipe-make-again">
@@ -93,10 +103,28 @@ function RecipePage() {
         <div className="recipe-ingredients">
           <div className="recipe-title">Ingredients</div>
           <div className="recipe-ingredients-box">
-            {ingredients.map((item) => (
+            {ingredients.map((item, index) => (
               <div className="recipe-ingredient">
-                <Checkbox key={item.index} />
-                <div className="instruction-item">
+                <Checkbox
+                  key={index}
+                  sx={{
+                    color: orange[900],
+                    "&.Mui-checked": {
+                      color: orange[900],
+                    },
+                  }}
+                  checked={checkedItems[index] || false}
+                  onChange={(event) => handleCheckboxChange(event, index)}
+                />
+                <div
+                  className="instruction-item"
+                  style={{
+                    textDecoration: checkedItems[index]
+                      ? "line-through"
+                      : "none",
+                    color: checkedItems[index] ? "grey" : "inherit",
+                  }}
+                >
                   {item.measure} {item.ingredient}
                 </div>
               </div>
