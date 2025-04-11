@@ -1,12 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from '../Layout/Header/Header';
-import Footer from '../Layout/Footer/Footer';
-import HomePage from '../HomePage/HomePage';
-import BlogPage from '../BlogPage/BlogPage';
-import RecipePage from '../RecipePage/RecipePage';
-import CategoryPage from '../CategoryPage/CategoryPage';
-import RecipesPage from '../RecipesPage/RecipesPage';
+import Header from '../Layout/Header/Header.jsx';
+import Footer from '../Layout/Footer/Footer.jsx';
+import HomePage from '../HomePage/HomePage.jsx';
+import BlogPage from '../BlogPage/BlogPage.jsx';
+import RecipePage from '../RecipePage/RecipePage.jsx';
+import CategoryPage from '../CategoryPage/CategoryPage.jsx';
+import RecipesPage from '../RecipesPage/RecipesPage.jsx';
 
 function App() {
 	return (

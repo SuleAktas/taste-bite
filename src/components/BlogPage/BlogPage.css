@@ -1,127 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @media screen and (min-width: 550px) {
-  .blog-page {
-    display: table;
-    margin: auto !important;
-  }
-  .blog-title {
-    font-size: 45px !important;
-    min-width: 600px;
-  }
-  .blog-pre-exp {
-    font-size: 20px !important;
-    min-width: 900px;
-    width: 75%;
-  }
-  .blog-vid iframe {
-    width: 100%;
-    height: 650px;
-  }
-  .blog-general-title {
-    font-size: 45px !important;
-    min-width: 600px;
-  }
-  .blog-basics {
-    display: flex;
-    margin-top: 30px;
-  }
-  .blog-basics-text {
-    width: 45% !important;
-    text-align: justify;
-  }
-  .blog-basics-img img {
-    margin-top: 30px;
-    margin-left: 150px;
-    width: 450px !important;
-    height: 450px !important;
-  }
-  .blog-kitchen-img img {
-    width: 100% !important;
-    height: 90% !important;
-  }
-  .blog-basics,
-  .blog-before,
-  .blog-writer,
-  .blog-kitchen {
-    min-width: 1200px;
-  }
+	.blog-page {
+		display: table;
+		margin: auto !important;
+	}
+	.blog-title {
+		font-size: 45px !important;
+		min-width: 600px;
+	}
+	.blog-pre-exp {
+		font-size: 20px !important;
+		min-width: 900px;
+		width: 75%;
+	}
+	.blog-vid iframe {
+		width: 100%;
+		height: 650px;
+	}
+	.blog-general-title {
+		font-size: 45px !important;
+		min-width: 600px;
+	}
+	.blog-basics {
+		display: flex;
+		margin-top: 30px;
+	}
+	.blog-basics-text {
+		width: 45% !important;
+		text-align: justify;
+	}
+	.blog-basics-img img {
+		margin-top: 30px;
+		margin-left: 150px;
+		width: 450px !important;
+		height: 450px !important;
+	}
+	.blog-kitchen-img img {
+		width: 100% !important;
+		height: 90% !important;
+	}
+	.blog-basics,
+	.blog-before,
+	.blog-writer,
+	.blog-kitchen {
+		min-width: 1200px;
+	}
 }
 .icon-margin {
-  margin-right: 5px;
+	margin-right: 5px;
 }
 .blog-page {
-  margin: 20px;
-  width: 345px;
+	margin: 20px;
+	width: 345px;
 }
 .blog-title {
-  margin-bottom: 10px;
-  font-family: "Playfair Display", serif;
-  font-size: 30px;
-  font-weight: 700;
+	margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+	font-size: 30px;
+	font-weight: 700;
 }
 .blog-exp {
-  display: flex;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #c0c0c0;
-  text-align: justify;
+	display: flex;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #c0c0c0;
+	text-align: justify;
 }
 .blog-exp-author {
-  margin-right: 60px;
-  margin-bottom: 20px;
+	margin-right: 60px;
+	margin-bottom: 20px;
 }
 .blog-pre-exp {
-  font-size: 14px;
-  word-spacing: 3px;
-  line-height: 2;
-  margin-bottom: 20px;
+	font-size: 14px;
+	word-spacing: 3px;
+	line-height: 2;
+	margin-bottom: 20px;
 }
 .blog-general-title {
-  font-family: "Playfair Display", serif;
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 20px;
+	font-family: 'Playfair Display', serif;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 .blog-vid iframe {
-  border-radius: 2%;
+	border-radius: 2%;
 }
 .blog-basics-exp {
-  margin-top: 20px;
-  line-height: 2;
-  word-spacing: 3px;
-  text-align: justify;
+	margin-top: 20px;
+	line-height: 2;
+	word-spacing: 3px;
+	text-align: justify;
 }
 .blog-basics-img img {
-  width: 345px;
+	width: 345px;
 }
 .blog-basics-img {
-  /* margin-top: 50px; */
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 .blog-kitchen-img img {
-  width: 325px;
-  height: 200px;
-  border-radius: 2%;
+	width: 325px;
+	height: 200px;
+	border-radius: 2%;
 }
 .blog-kitchen-img {
-  margin-top: 50px;
-  padding-bottom: 20px;
+	margin-top: 50px;
+	padding-bottom: 20px;
 }
 
 .blog-writer-quote {
-  font-family: "Playfair Display", serif;
-  font-size: 45px;
-  font-weight: 800;
+	font-family: 'Playfair Display', serif;
+	font-size: 45px;
+	font-weight: 800;
 }
 .blog-writer-name {
-  margin-top: 10px;
-  font-size: 20px;
+	margin-top: 10px;
+	font-size: 20px;
 }
 .blog-writer {
-  border-top: 1px solid #c0c0c0;
-  border-bottom: 1px solid #c0c0c0;
-  margin-top: 10px;
-  padding: 10px;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	margin-top: 10px;
+	padding: 10px;
 }
