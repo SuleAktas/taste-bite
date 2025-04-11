@@ -21,11 +21,6 @@ function App() {
 					<Route path="/recipe" element={<RecipePage />} />
 				</Routes>
 				<Footer />
-
-
-
-
-        
 			</div>
 		</Router>
 	);
