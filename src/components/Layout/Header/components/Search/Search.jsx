@@ -46,14 +46,15 @@ function Search(props) {
 			</div>
 
 			<div className="search-output">
-				{data?.meals.map(recipe => (
-					<SearchItem
-						id={recipe.idMeal}
-						title={recipe.strMeal}
-						category={recipe.strCategory}
-						image={recipe.strMealThumb}
-					/>
-				))}
+				{Array.isArray(data?.meals) &&
+					data?.meals.map(recipe => (
+						<SearchItem
+							id={recipe.idMeal}
+							title={recipe.strMeal}
+							category={recipe.strCategory}
+							image={recipe.strMealThumb}
+						/>
+					))}
 			</div>
 		</div>
 	);
