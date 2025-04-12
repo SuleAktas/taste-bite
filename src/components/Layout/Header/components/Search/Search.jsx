@@ -37,7 +37,11 @@ function Search(props) {
 							<FontAwesomeIcon
 								icon={faX}
 								onClick={handleClose}
-								style={{ marginRight: '10px', marginBottom: '10px' }}
+								style={{
+									marginRight: '10px',
+									marginBottom: '10px',
+									cursor: 'pointer',
+								}}
 							/>
 						),
 					}}

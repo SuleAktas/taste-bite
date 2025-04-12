@@ -41,11 +41,25 @@ function Header() {
 				<Link to="/buy">Buy</Link>
 			</div>
 			<div className="wider-page-icons">
-				<FontAwesomeIcon icon={faSearch} size="xl" onClick={handleClick} />
+				<FontAwesomeIcon
+					icon={faSearch}
+					size="xl"
+					onClick={handleClick}
+					style={{
+						cursor: 'pointer',
+					}}
+				/>
 				<FontAwesomeIcon icon={faCircleUser} size="xl" />
 			</div>
 			<div className="header-buttons">
-				<FontAwesomeIcon icon={faSearch} size="xl" onClick={handleClick} />
+				<FontAwesomeIcon
+					icon={faSearch}
+					size="xl"
+					onClick={handleClick}
+					style={{
+						cursor: 'pointer',
+					}}
+				/>
 				<FontAwesomeIcon icon={faBars} size="xl" onClick={openNav} />
 			</div>
 
