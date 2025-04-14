@@ -31,7 +31,7 @@ function RecipePage() {
   const params = new URLSearchParams(location.search);
 
   const { data, isLoading: isRecipeLoading } = useGetMealByIdQuery(
-    params.get("id")
+    params.get("id"),
   );
   if (isRecipeLoading) {
     return <div>Loading...</div>;
