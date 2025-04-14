@@ -1,4 +1,4 @@
-# 🥘 TasteBite
+# 🥘 TasteBite - [Live Demo](https://taste-bite-three.vercel.app/)
 
 TasteBite is a recipe application that allow users to search for recipes, view categorized recipes, explore
 highly recommended dishes, and access detailed instructions on how to make each recipe.
