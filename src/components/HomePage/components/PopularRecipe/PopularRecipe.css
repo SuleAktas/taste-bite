@@ -49,6 +49,8 @@
 	margin-bottom: 2%;
 	margin-left: 40px;
 	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 .gg-trending {
 	margin-right: 5%;
