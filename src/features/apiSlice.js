@@ -16,13 +16,13 @@ export const recipesApi = createApi({
 			query: () => 'recipe/popularRecipe',
 		}),
 		getMealById: builder.query({
-			query: id => `recipe/id=${id}`,
+			query: id => `recipe/${id}`,
 		}),
 		getRecipesByCategory: builder.query({
-			query: name => `filter.php?c=${name}`,
+			query: name => `/recipe/recipeByCategoryName/q=${name}`,
 		}),
 		getRecipesByName: builder.query({
-			query: name => `search.php?f=${name}`,
+			query: name => `/recipe/recipeByName/q=${name}`,
 		}),
 		getAllCollections: builder.query({
 			query: () => `collection`,
